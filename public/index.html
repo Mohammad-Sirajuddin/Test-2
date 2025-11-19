@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cad Parts Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="input-box">
+      <form id="parts-form" autocomplete="off" novalidate>
+        <div class="row">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter the part name" />
+        </div>
+
+        <div class="row">
+          <label for="category">Category</label>
+          <input id="category" type="text" placeholder="Enter the category" />
+        </div>
+
+        <div class="row">
+          <label for="material">Material</label>
+          <input id="material" type="text" placeholder="Enter the material" />
+        </div>
+
+        <div class="row">
+          <label for="diameter">Diameter</label>
+          <input id="diameter" type="text" placeholder="Enter the diameter" />
+        </div>
+      </form>
+      <div id="button">
+        <button type="button" onclick="PostInformation()">Submit</button>
+      </div>
+    </div>
+    <div class="headers">
+      <div class="headers-items">
+        <span>ID</span>
+      </div>
+      <div class="headers-items">
+        <span>NAME</span>
+      </div>
+      <div class="headers-items">
+        <span>CATEGORY</span>
+      </div>
+      <div class="headers-items">
+        <span>MATERIAL</span>
+      </div>
+      <div class="headers-items">
+        <span>DIAMETER</span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

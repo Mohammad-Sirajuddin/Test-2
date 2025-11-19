@@ -1,0 +1,77 @@
+/* page centering */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  background: #fafafa;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+}
+
+/* card */
+#input-box {
+  background: #f1f3e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  width: 420px; /* optional fixed width for nicer alignment */
+  box-sizing: border-box;
+}
+
+/* each label+input row */
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr; /* label column width + input expands */
+  column-gap: 16px;
+  align-items: center; /* vertically center label and input */
+  margin-bottom: 12px;
+}
+
+/* labels */
+label {
+  font-weight: 600;
+  text-transform: capitalize;
+  justify-self: start;
+}
+
+/* inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  background-color: #fafafa;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.headers,.outputBox {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.headers-items {
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  background-color: #d0d0d0;
+  border: 1px solid black;
+}
